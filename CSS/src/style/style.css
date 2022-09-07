@@ -1,0 +1,75 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 65px;
+    color: #070707;
+    padding: 0 0 50px 0;
+}
+
+.main-photo {
+    background-position: 30% 50%;
+    background-size: cover;
+}
+
+.main-photo img {
+    width: 100%;
+}
+
+.about_me {
+    background-color: #F6F6F6;
+}
+
+.about {
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    padding: 100px 620px 50px;
+}
+
+
+.introduction {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    padding: 0px 480px 30px;
+}
+
+.study {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    padding: 0px 517px 30px;
+}
+
+.co-working {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    padding: 0px 559.5px 100px;
+}
+
+.nav-list {
+    padding: 0;
+    margin: 0 -20px;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 0 20px;
+}
