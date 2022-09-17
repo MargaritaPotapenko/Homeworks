@@ -1,0 +1,157 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 0 85px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: black;
+    margin: 0 0 5px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+}
+
+span {
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col {
+    padding: 0 15 30px;
+    margin-bottom: 65px;
+    width: 25%;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin-left: 155px;
+    color: crimson;
+}
+
+.text-holder .price {
+    margin-left: 150px;
+    font-size: 23px;
+    color: darkslategray;
+}
+
+.text-holder .new-price {
+    display: inline-block;
+    margin-left: 120px;
+    color:red ;
+    font-size: 19px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.text-holder .old-price {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color :rgba(29, 31, 46, 0.4);
+    text-decoration-line: line-through;
+}
+
+.perfume-article {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+}
+
+.discount-holder .discount:before {
+    content: '26%';
+    position: absolute;
+    top: 0;
+    right: 300px;
+	width: 60px;
+	height: 40px;
+    border-radius: 10px;
+	background-color: fuchsia;
+}
+
+.top-holder .top:before {
+    content: 'top seller';
+    position: absolute;
+    top: 0;
+    right: 300px;
+    width: 60px;
+	height: 30px;
+    border-radius: 10px;
+	background-color: yellow;
+}
+
+.like-holder .like {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    top: 0;
+    left: 275px;
+}
+    
+.like:before,
+.like:after {
+    position: absolute;
+    content: "";
+    left: 40px;
+    top: 0;
+    width: 40px;
+    height: 60px;
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 40px 40px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.like:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+
+
+
+
+
+
