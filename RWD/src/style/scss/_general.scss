@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 35px;
+
+    @include media('>=768px'){
+        font-size: 40px;
+    }
+
+    @include media('>=1024px'){
+        font-size: 50px;
+    }
+}
+
+.row {
+    padding: 40px;
+
+    @include media('>=768px'){
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        padding: 0 15px 30px;
+        font-size: 14px;
+
+        @include media('>=768px'){
+            width: 50%;
+            font-size: 17px;
+        } 
+
+        @include media('>=1024px'){
+            width: calc(100% / 3);
+            font-size: 20px;
+
+        }
+    }
+}
+
+.text-holder {
+    border: 1px solid;
+    padding: 15px;
+}
