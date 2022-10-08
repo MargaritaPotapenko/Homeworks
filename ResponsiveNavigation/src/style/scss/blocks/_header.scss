@@ -1,0 +1,100 @@
+.header {
+    padding: 20px 0;
+    position: relative;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .nav-holder {
+        @include animate (opacity, visibility 0.4s);
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: $white;
+        padding: 20px;
+        box-shadow: 0 0 5px 5px $box-shadow;
+        opacity: 1;
+        visibility: visible;
+        min-height: 500px;
+        
+        &:active {
+            opacity: 0;
+            visibility: visible;
+        }
+    }
+
+    .nav-list {
+        list-style: none;
+        padding-top: 0;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        /*display: flex;
+        flex-wrap: wrap;*/
+
+        li {
+            padding: 0 15px;
+            text-align: center;
+        }
+    }
+    
+    .nav-item {
+        padding: 0 15px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $dark-blue;
+        transition: opacity ease-in-out 0.3s;
+    
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    
+    .cart-link {
+        display: flex;
+        align-items: center;
+    
+        span {
+            display: block;
+            padding: 0 10px;
+        }
+    
+        .cart-count {
+            background-color: $dark-blue;
+            border-radius: 50%;
+            font-size: 11px;
+            line-height: 18px;
+            text-align: center;
+            color: $white;
+            height: 18px;
+            min-width: 20px;
+            padding-left: 5px;
+            padding-right: 3px;
+        }
+    }
+
+    .nav-opener {
+        line-height: 0;
+        z-index: 2;
+        background: transparent;
+        border: none;
+        
+        @include media ('>=768px') {
+            display: none;
+        }
+    }
+}
+
+
