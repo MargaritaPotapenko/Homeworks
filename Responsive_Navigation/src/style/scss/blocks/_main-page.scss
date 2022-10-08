@@ -1,0 +1,255 @@
+.hero-section {
+    background-color: $background-color;
+    padding: 20px 0;
+    margin: 0 auto 123px;
+    width: calc(100vw - 60px);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    min-height: 530px;
+    color: $white;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+
+    .text-holder p {
+        margin: 0 0 38px;
+    }
+}
+
+.pseudo-title {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.story-section {
+    margin: 0 0 102px;
+    text-align: center;
+
+    .container {
+        max-width: 690px;
+    }
+    
+    p{
+        margin: 0 0 21px;
+    }
+    
+    h2 {
+        font-size: 28px;
+        line-height: 40px;
+        margin: 0 0 16px;
+        text-transform: none;
+    
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.story-link {
+    font-size: 15px;
+    line-height: 20px;
+    color: $bronze;
+    text-decoration: none;
+    border-bottom: 2px solid $bronze-hover;
+    padding-bottom: 2px;
+    transition: color ease-in-out 0.3s;
+
+    &:hover {
+        color: $bronze-hover;
+    }
+}
+
+.featured-mugs {
+    margin-bottom: 50px;
+
+    h3 {
+        font-weight: 400;
+    }
+}
+
+.more-products {
+    margin: 0 0 100px;
+
+    h3 {
+        font-weight: 400;
+    }
+}
+
+.coffee-link {
+    text-decoration: none;
+    text-align: center;
+    color: $dark-blue-opacity;
+    font-size: 16px;
+    line-height: 28px;
+
+    &:hover .img-holder {
+        transform: scale(1.05);
+    }
+    
+    .img-holder {
+        margin-bottom: 35px;
+        transition: transform ease-in-out 0.3s;
+    }
+    
+    .new-price {
+        display: inline-block;
+        margin-right: 10px;
+        color:$bronze;
+        font-size: 19px;
+        line-height: 32px;
+    }
+    
+    .old-price {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color :$dark-blue-opacity2;
+        text-decoration-line: line-through;
+    }
+}
+
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.img-col {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.img-col-sm {
+    padding: 0 10px;
+    width: calc(100% - 300px);
+
+    .img-holder {
+        margin-bottom: 20px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.premium-offer {
+    margin: 0 0 65px;
+}
+
+.premium-offer-description {
+    max-width: 413px;
+    padding-left: 60px;
+
+    .title {
+        display: block;
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: $dark-blue;
+    }
+    
+    .pseudo-title,
+    .title {
+        color: $dark-blue;
+    }
+    
+    .text-holder p {
+        margin-bottom: 25px;
+    }
+}
+
+.visual-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 340px;
+    margin-bottom: 100px;
+}
+
+.behind {
+    margin: 0 0 120px;
+}
+
+.coffee-article{
+    h3 {
+        text-align: left;
+        line-height: 32px;
+        font-weight: 400;
+    }
+    
+    .img-holder {
+        margin-bottom: 30px;
+    }
+    
+    .date {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color:$dark-blue;
+    }
+} 
+
+.subscribe {
+    padding: 80px 0 85px;
+    background-color: $dark-blue;
+    color:$white;
+    text-align: center;
+    margin: 0 auto;
+    width: calc(100vw - 60px);
+
+    h2 {
+        color: $white;
+        margin-bottom: 15px;
+    
+        &:before,
+        &:after {
+            background-color: $light-grey;
+        }
+    }
+        
+    .title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 50px;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+}
+
+.subscribe-form {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 490px;
+    justify-content: space-between;
+
+    .input {
+        border: 1px solid $border;
+        background-color: transparent;
+        color: $white;
+        outline: none;
+        padding: 18px;
+        height: 54px;
+        margin-right: 10px;
+        width: calc(100% - 140px);
+        font-family: inherit;
+    }
+    
+    .btn {
+        padding: 18px 21px;
+        font-weight: 400;
+        color: $black ;
+        font-size: 12px;
+    }
+}

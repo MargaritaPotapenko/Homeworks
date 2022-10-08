@@ -1,0 +1,116 @@
+.footer {
+    padding: 107px 0 62px;
+
+    .logo-holder {
+        margin-bottom: 22px;
+    }
+    
+    .title {
+        display: block;
+        margin-bottom: 23px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $dark-blue;
+    }
+
+    .text-holder {
+        font-size: 14px;
+        line-height: 22px;
+        color: $dark-blue-opacity ;  
+    }
+
+    .mail-link {
+        font-size: 23px;
+        line-height: 36px;
+        color: $dark-blue;
+        text-decoration: none;
+        transition: color ease-in-out 0.3s;
+
+        &:hover {
+            opacity: $dark-blue-opacity;
+        }
+    }
+    
+    .copy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 22px;
+        color: $dark-blue-opacity3;
+        margin-top: -25px;
+        align-self: flex-end;
+
+        a {
+            color: $dark-blue-opacity3;
+            transition: color ease-in-out 0.3s;
+            text-decoration: none;
+
+            &:hover {
+                color: $dark-blue-opacity;
+            }
+        }
+    }
+    
+    .flex-folder {
+        width: 100%;
+    }
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-col {
+    max-width: 25%;
+    padding-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &:first-child {
+        max-width: 315px;
+        padding-right: 55px;
+    }
+    
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+    line-height: 1px;
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 22px;
+        color: $dark-blue-opacity;
+        transition: color ease-in-out 0.3s;
+
+        &:hover {
+            opacity: $dark-blue;
+        }
+    
+    }
+    
+    .mail-title {
+        font-size: 14px;
+        line-height: 22px;
+        color: $dark-blue-opacity;
+        margin-bottom: 0 0 15px;
+    }
+}
+
+
+
